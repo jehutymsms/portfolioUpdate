@@ -96,6 +96,16 @@ nav >a:hover{
     }
   }
 
+#earth{
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
 #project-header {
     display: flex;
     justify-content: center;
