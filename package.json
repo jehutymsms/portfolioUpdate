@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jehutymsms/Portfolio-scratch.git"
+  },
+  "author": "Andrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jehutymsms/Portfolio-scratch/issues"
+  },
+  "homepage": "https://github.com/jehutymsms/Portfolio-scratch#readme",
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "html": "^1.0.0",
+    "html-loader": "^3.0.1",
+    "loader": "^2.1.1",
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

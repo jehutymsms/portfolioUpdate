@@ -1,0 +1,209 @@
+:root{
+    --clr-primary-400:#3a7db0;
+    --clr-primary-800:#000;
+    --clr-neutral-100:#fff;
+    
+    --clr-gradient-400:linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+
+    --ff-accent:'Roboto Condensed', sans-serif;
+    --ff-primary:'Lato', sans-serif;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+
+html, body{
+	line-height: 1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-family: var(--ff-primary);
+    background-image: var(--clr-gradient-400)
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
+  }
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--clr-primary-800);
+    z-index: 1;
+}
+
+
+div{
+    text-decoration: none;
+}
+
+nav > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    font-size: 1.8em;
+    color:var(--clr-neutral-100);
+}
+
+nav > div:hover{
+
+    color:var(--clr-primary-800);
+    background-color:var(--clr-neutral-100);
+}
+
+#backgroundSection{
+    position: fixed;
+    height: 100vh;
+    z-index: 1;
+}
+
+
+#welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 2.5em;
+    height: 100vh;
+    font-family: var(--ff-accent);
+    color: var(--clr-neutral-100);
+    z-index: 1;
+}
+
+.about{
+    background-color:black ;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 0.1em dotted white;
+    border-style: outset;
+}
+
+@media only screen and (min-width: 640px) {
+    #projects {
+      height: 100vh;
+    }
+  }
+
+#earth{
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#project-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color:var(--clr-neutral-100);
+    font-size: 2.5em;
+    background-color: var(--clr-primary-800);
+}
+
+img{
+    height: 90%;
+    max-width: 100%;
+}
+
+.project-grid > ul{
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    color:var(--clr-neutral-100);
+    z-index: 0;
+    
+}
+
+/* .project-grid > ul > li > figure > a > figcaption > p{
+    font-size: 0.7em;
+}
+
+
+.project-grid > ul > li > figure{
+    height: 20em;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.5em;
+    margin: 0.8em;
+}
+
+.project-grid > ul > li > figure > a > figcaption{
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    font-size: 1.5em;
+    padding-bottom: 0.2em;
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-800);
+} */
+
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 4em;
+    font-size: 2.5em;
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    overflow-wrap: break-word;
+    font-family: var(--ff-accent);
+    color: var(--clr-neutral-100);
+    z-index: 1;
+}
+
+#contact >*{
+    background-color:black ;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 0.1em dotted white;
+    border-style: outset;
+}
+
+#contact > *{
+    line-height: 1.5;
+}
+
+#contact > h3 > a{
+    color: var(--clr-neutral-100);
+}
+
+#contact > h3 > a:hover{
+    color:var(--clr-neutral-100);
+    background-color:var(--clr-primary-400);
+}
+
