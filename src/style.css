@@ -37,16 +37,13 @@ footer, header, hgroup, menu, nav, section{
 
 html, body{
 	line-height: 1;
-    height: 100%;
-    width: 100%;
     text-align: center;
     font-family: var(--ff-primary);
     background-image: var(--clr-gradient-400)
 }
 
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 10vh;
+body{
+    min-height: 100vh
   }
 
 nav{
@@ -59,10 +56,6 @@ nav{
     z-index: 1;
 }
 
-
-div{
-    text-decoration: none;
-}
 
 nav > div{
     display: flex;
@@ -108,11 +101,6 @@ nav > div:hover{
     border-style: outset;
 }
 
-@media only screen and (min-width: 640px) {
-    #projects {
-      height: 100vh;
-    }
-  }
 
 #earth{
     object-fit: cover;
@@ -123,53 +111,43 @@ nav > div:hover{
     min-height: 100%;
 }
 
-#project-header{
+
+#projects{
+    position: relative;
+    top: 6em;
+    bottom: 6em;
+    height: 100%;
+    margin: auto;
+    border: 3px solid green; 
+}
+
+#projectContainer{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
-    height: 10vh;
-    color:var(--clr-neutral-100);
-    font-size: 2.5em;
-    background-color: var(--clr-primary-800);
+    height: 100%;
+    border: 3px solid red; 
 }
 
-img{
-    height: 90%;
-    max-width: 100%;
+#projectContainer > div{
+    width: 50%;
+    height: 50%;
+    margin: 1em;
+    background-color: white;
 }
 
-.project-grid > ul{
-    display: grid;
-    list-style-type: none;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-    color:var(--clr-neutral-100);
-    z-index: 0;
+.projectImage{
+    width: 20em;
+    height: 20em;
+    margin:auto;
     
 }
 
-/* .project-grid > ul > li > figure > a > figcaption > p{
-    font-size: 0.7em;
+img{
+    max-width:100%;
+    max-height:100%;
 }
-
-
-.project-grid > ul > li > figure{
-    height: 20em;
-    overflow: hidden;
-    position: relative;
-    border-radius: 1.5em;
-    margin: 0.8em;
-}
-
-.project-grid > ul > li > figure > a > figcaption{
-    width: 100%;
-    position: absolute;
-    bottom:0;
-    font-size: 1.5em;
-    padding-bottom: 0.2em;
-    color: var(--clr-neutral-100);
-    background-color: var(--clr-primary-800);
-} */
-
 
 #contact{
     display: flex;
