@@ -1,5 +1,5 @@
 :root{
-    --clr-primary-400:#3a7db0;
+    --clr-primary-400:#9393ec;
     --clr-primary-800:#000;
     --clr-neutral-100:#fff;
     
@@ -39,7 +39,7 @@ html, body{
 	line-height: 1;
     text-align: center;
     font-family: var(--ff-primary);
-    background-image: var(--clr-gradient-400)
+    background-image: var(--clr-gradient-400);
 }
 
 body{
@@ -69,7 +69,6 @@ nav > div{
 }
 
 nav > div:hover{
-
     color:var(--clr-primary-800);
     background-color:var(--clr-neutral-100);
 }
@@ -126,30 +125,74 @@ nav > div:hover{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     height: 100%;
     border: 3px solid red; 
 }
 
-#projectContainer > div{
-    width: 50%;
-    height: 50%;
-    margin: 1em;
-    background-color: white;
-}
-
-.projectImage{
-    width: 20em;
-    height: 20em;
-    margin:auto;
+#projectContainer > div, .projectImage,.project-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
 }
 
+#projectContainer > div{
+    width: 20em;
+    height: 20em;
+    margin: 1em;
+    border-radius: 1em;
+    background-color: var(--clr-neutral-100);
+}
+
+.projectImage{
+    display:flex;
+    /* display:none; */
+    height: 90%;
+    width: 90%;
+    margin:auto;
+}
+
 img{
+    display:none;
     max-width:100%;
     max-height:100%;
 }
 
-#contact{
+.project-description{
+    /* display:none; */
+    display:flex;
+    width: 100%;
+    border: 3px solid var(--clr-primary-400); 
+}
+
+.project-description > *{
+    /* display:none; */
+    padding: 0.5em;
+    width: 5em;
+}
+
+.project-description > a{
+    text-decoration: none;
+}
+
+.project-description > a:hover{
+    background-color: var(--clr-primary-800);
+    width: 100%;
+}
+
+.projectImage:hover img{    
+    display:none;
+}
+.projectImage:hover .project-description{    
+    display:flex;
+}
+
+
+
+
+/* #contact{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -183,5 +226,5 @@ img{
 #contact > h3 > a:hover{
     color:var(--clr-neutral-100);
     background-color:var(--clr-primary-400);
-}
+} */
 
