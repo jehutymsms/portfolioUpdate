@@ -53,7 +53,7 @@ nav{
     width: 100%;
     height: 10vh;
     background-color: var(--clr-primary-800);
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -115,9 +115,9 @@ nav > div:hover{
     position: relative;
     top: 6em;
     bottom: 6em;
+    margin: 1em;
     height: 100%;
-    margin: auto;
-    border: 3px solid green; 
+    z-index: 1;
 }
 
 #projectContainer{
@@ -125,9 +125,9 @@ nav > div:hover{
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    height: 100%;
-    border: 3px solid red; 
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
 }
 
 #projectContainer > div, .projectImage,.project-description{
@@ -143,7 +143,7 @@ nav > div:hover{
     height: 20em;
     margin: 1em;
     border-radius: 1em;
-    background-color: var(--clr-neutral-100);
+    background-color: #f2f2f2;
 }
 
 .projectImage{
@@ -155,44 +155,51 @@ nav > div:hover{
 }
 
 img{
-    display:none;
     max-width:100%;
     max-height:100%;
 }
 
 .project-description{
-    /* display:none; */
-    display:flex;
+    display:none;
     width: 100%;
-    border: 3px solid var(--clr-primary-400); 
+    border-radius: 1em;
 }
 
 .project-description > *{
     /* display:none; */
-    padding: 0.5em;
-    width: 5em;
+    transition: 0.5s;
+    width: 6em;
+}
+
+.project-description > h2{
+    font-size: 1.5em;
+    margin: 0.5em;
+    width: 100%;
 }
 
 .project-description > a{
+    padding: 0.2em;
+    margin: 0.2em;
+    color: var(--clr-primary-800);
+    border-radius: 1em;
     text-decoration: none;
+    border: 0.2em solid var(--clr-primary-800);
 }
 
 .project-description > a:hover{
-    background-color: var(--clr-primary-800);
-    width: 100%;
+    color: var(--clr-neutral-100);
+    background-color: #3a3d40;
 }
 
 .projectImage:hover img{    
     display:none;
 }
+
 .projectImage:hover .project-description{    
     display:flex;
 }
 
-
-
-
-/* #contact{
+#contact{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -226,5 +233,5 @@ img{
 #contact > h3 > a:hover{
     color:var(--clr-neutral-100);
     background-color:var(--clr-primary-400);
-} */
+}
 

@@ -4,7 +4,7 @@ export const welcomeSection = (() => {
         return { body: body };
     })();
 
-    // Welcome Object
+    // Welcome Object info
     const welcomeTextObject = {
         welcomeTags: ['section', 'div', 'h1', 'p'],
         section: {

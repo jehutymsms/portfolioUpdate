@@ -1,27 +1,53 @@
 import './style.css';
-
-
 import { navBar } from './navBar';
 import { welcomeSection } from './welcomeSection';
 import { backgroundSection } from './backgroundSection';
 import { contactSection } from './contactSection';
+import { projectSection } from './projectsSection';
 
-const newElement = (item) => {
-    let element = document.createElement(item.tag);
-    if (item.classId) { element.classList = item.classId; };
-    if (item.id) { element.id = item.id; };
-    if (item.htmlString) { element.innerHTML = item.htmlString; };
-    if (item.src){element.src = element.src;};
-    if (item.loop){element.loop = element.loop;};
-    if (item.autoplay ){element.autoplay  = element.autoplay ;};
-    if (item.alt ){element.alt  = element.alt ;};
-    if (item.href ){element.href  = element.href ;};
-    if (item.target){element.target  = element.target ;};
-    return element;
-}
+const main = (() => {
+    backgroundSection.backgroundSection();
+    navBar.navBarSection();
+    welcomeSection.welcomeSection()
 
 
-// backgroundSection.backgroundSection()
-// navBar.navBarSection()
-// welcomeSection.welcomeSection()
-// contactSection.contactSection()
+    const cacheDom = (() => {
+        let body = document.getElementsByTagName('body'),
+            navBar = document.getElementById('navbar'),
+            aboutPage = document.getElementById('aboutPage'),
+            projectPage = document.getElementById('projectPage'),
+            contactPage = document.getElementById('contactPage');
+
+        return { body: body, navBar: navBar, aboutPage: aboutPage, projectPage: projectPage, contactPage: contactPage };
+    })();
+    
+
+    const bindEvents = () => {
+        cacheDom.aboutPage.addEventListener('click', function () {
+            removeCurAddNew(welcomeSection.welcomeSection);
+        })
+        cacheDom.projectPage.addEventListener('click', function () {
+            removeCurAddNew(projectSection.projectSection);
+        })
+        cacheDom.contactPage.addEventListener('click', function () {
+            removeCurAddNew(contactSection.contactSection);
+        })
+    }
+
+    const render = (() => {
+        const removePrev = () => {
+            cacheDom.body[0].lastElementChild.remove();
+        }
+        return { removePrev: removePrev };
+    })()
+
+    // Function list
+    const removeCurAddNew = (New) => {
+        render.removePrev();
+        New();
+    }
+
+    bindEvents();
+    
+
+})();
