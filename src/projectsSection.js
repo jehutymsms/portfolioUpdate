@@ -1,3 +1,5 @@
+import Statcard from './images/Statspreviewcardcomponent.png';
+
 export const projectSection = (() => {
     const cacheDom = (() => {
         let body = document.getElementsByTagName('body')
@@ -19,7 +21,7 @@ export const projectSection = (() => {
             project1Image: {
                 id: 'project1Image',
                 img: {
-                    src: 'https://jehutymsms.github.io/src/images/Statspreviewcardcomponent.png',
+                    src: Statcard,
                     alt: 'Card Project',
                 },
                 div: {
