@@ -1,4 +1,7 @@
-import Statcard from './images/Statspreviewcardcomponent.png';
+import statCard from './images/Statspreviewcardcomponent.png';
+import restaurant from './images/odin-restaurant-page.png';
+import rockPaperScissors from './images/RockPaperScissors.png';
+import library from './images/odin-library-page.png';
 
 export const projectSection = (() => {
     const cacheDom = (() => {
@@ -21,7 +24,7 @@ export const projectSection = (() => {
             project1Image: {
                 id: 'project1Image',
                 img: {
-                    src: Statcard,
+                    src: statCard,
                     alt: 'Card Project',
                 },
                 div: {
@@ -43,7 +46,7 @@ export const projectSection = (() => {
             project2Image: {
                 id: 'project2Image',
                 img: {
-                    src: '/src/images/RockPaperScissors.png',
+                    src: rockPaperScissors,
                     alt: 'rock paper scissors game image',
                 },
                 div: {
@@ -65,7 +68,7 @@ export const projectSection = (() => {
             project3Image: {
                 id: 'project3Image',
                 img: {
-                    src: '/src/images/odin-library-page.png',
+                    src: library,
                     alt: 'library app image preview',
                 },
                 div: {
@@ -87,7 +90,7 @@ export const projectSection = (() => {
             project4Image: {
                 id: 'project4Image',
                 img: {
-                    src: '/src/images/odin-restaurant-page.png',
+                    src: restaurant,
                     alt: 'restaurant home page preview',
                 },
                 div: {
