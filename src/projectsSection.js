@@ -19,7 +19,7 @@ export const projectSection = (() => {
             project1Image: {
                 id: 'project1Image',
                 img: {
-                    src: '/src/images/Stats preview card component.png',
+                    src: '/src/images/Statspreviewcardcomponent.png',
                     alt: 'Card Project',
                 },
                 div: {
