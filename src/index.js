@@ -1,4 +1,4 @@
-import './style.css';
+import './style.scss';
 import { navBar } from './navBar';
 import { welcomeSection } from './welcomeSection';
 import { backgroundSection } from './backgroundSection';
