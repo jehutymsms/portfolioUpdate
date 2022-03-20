@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jehutymsms/Portfolio-scratch.git",
-    "homepage": "http://jehutymsms.github.io/Portfolio-scratch"
+    "url": "git+git@github.com:jehutymsms/portfolio.git",
+    "homepage": "git@github.com:jehutymsms/portfolio.git"
   },
   "author": "Andrew",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jehutymsms/Portfolio-scratch/issues"
+    "url": "git@github.com:jehutymsms/portfolio.git/issues"
   },
-  "homepage": "https://github.com/jehutymsms/Portfolio-scratch#readme",
+  "homepage": "git@github.com:jehutymsms/portfolio.git#readme",
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "babel-loader": "^8.2.3",
